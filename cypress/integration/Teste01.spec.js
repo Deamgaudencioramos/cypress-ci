@@ -2,7 +2,7 @@
 describe('teste01', () => {
     beforeEach(() => cy.visit("https://ticket-box.s3.eu-central-1.amazonaws.com/index.html"));
     it('Preencher campos', () => {
-    const fristname = "deam";
+    const fristname = "Joao";
     const lastname ="gaudencio";
     cy.get('#first-name').type(fristname);
     cy.get('#last-name').type(lastname);
