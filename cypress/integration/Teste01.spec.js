@@ -2,7 +2,7 @@
 describe('teste01', () => {
     beforeEach(() => cy.visit("https://ticket-box.s3.eu-central-1.amazonaws.com/index.html"));
     it('Preencher campos', () => {
-    const fristname = "Joao";
+    const fristname = "deam";
     const lastname ="gaudencio";
     cy.get('#first-name').type(fristname);
     cy.get('#last-name').type(lastname);
@@ -46,7 +46,7 @@ describe('teste01', () => {
     });
     
     it('Preencher os campos e resetar', () => {
-        const fristname = "deam";
+        const fristname = "joao";
         const lastname ="gaudencio";
         const fullname = `${fristname} ${lastname}`;
         cy.get('#first-name').type(fristname);
