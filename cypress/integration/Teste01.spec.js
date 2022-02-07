@@ -1,7 +1,7 @@
 
 describe('teste01', () => {
     beforeEach(() => cy.visit("https://ticket-box.s3.eu-central-1.amazonaws.com/index.html"));
-    it('Preencher campos', () => {
+    it('Preencher campos validos', () => {
     const fristname = "deam";
     const lastname ="gaudencio";
     cy.get('#first-name').type(fristname);
